@@ -1,16 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Electri Climas Sanson | Electricidad y Climatización en Chihuahua</title>
-  <meta name="description" content="Servicios profesionales de electricidad, climatización y proyectos técnicos en Chihuahua.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Servicios profesionales de electricidad, climatización y proyectos técnicos en Chihuahua. Instalaciones, mantenimiento, ingeniería y soporte." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<h1>Electri Climas Sanson</h1>
-<p>Ingeniería eléctrica y climatización profesional.</p>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo.png" alt="Electri Climas Sanson" />
+        <div>
+          <div>Electri Climas Sanson</div>
+          <div class="badge">Chihuahua</div>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn-primary" href="https://wa.me/6141360783" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-card">
+          <div class="kicker">
+            <span class="dot"></span>
+            <span>Electricidad • Climatización • Ingeniería</span>
+          </div>
+
+          <h1>
+            Soluciones técnicas <span>reales</span><br/>
+            para industria y hogar
+          </h1>
+
+          <p class="lead">
+            Instalaciones, mantenimiento y proyectos eléctricos/clima con enfoque de ingeniería.
+            Trabajo en campo, diagnóstico claro y ejecución profesional en Chihuahua.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Pedir asesoría</a>
+            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          </div>
+
+          <p class="small">
+            * Cotización orientativa sin compromiso (según diagnóstico y visita).
+          </p>
+        </div>
+
+        <aside class="side-card">
+          <h3 class="side-title">Áreas que cubrimos</h3>
+          <ul class="list">
+            <li><span class="icon"></span> Instalaciones eléctricas (residencial / comercial / industrial)</li>
+            <li><span class="icon"></span> Climatización (mini-split, equipos comerciales, diagnóstico)</li>
+            <li><span class="icon"></span> Proyectos técnicos (cálculo, dimensionamiento, mejoras)</li>
+            <li><span class="icon"></span> Mantenimiento preventivo y correctivo</li>
+          </ul>
+          <p class="small">
+            Respuesta rápida y comunicación directa (sin vueltas).
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2>Servicios</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>⚡ Instalación eléctrica</h3>
+            <p>Canalización, tableros, protecciones, circuitos, cumplimiento y seguridad.</p>
+            <div class="tag">Potencia / Control</div>
+          </div>
+
+          <div class="card">
+            <h3>❄️ Climatización</h3>
+            <p>Diagnóstico, mantenimiento, corrección de fallas, optimización de consumo.</p>
+            <div class="tag">Confort / Eficiencia</div>
+          </div>
+
+          <div class="card">
+            <h3>🧠 Ingeniería aplicada</h3>
+            <p>Recomendación técnica, cálculos, revisión de cargas, propuestas de mejora.</p>
+            <div class="tag">Enfoque técnico</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div class="card">
+          <h3>Portafolio (próximo)</h3>
+          <p>
+            Aquí vamos a poner fotos reales (antes/después), una mini ficha técnica por trabajo,
+            y testimonios. Eso da confianza brutal.
+          </p>
+          <div class="tag">En construcción</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="card">
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/6141360783" target="_blank" rel="noopener">Enviar mensaje</a></p>
+          <p><strong>Zona:</strong> Chihuahua y alrededores</p>
+          <p class="small">Tip: cambia el número “6141360783” por tu Whats real.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div><strong>Electri Climas Sanson</strong> — Chihuahua</div>
+      <div>© <span id="y"></span> Todos los derechos reservados</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
-
