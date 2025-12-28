@@ -1,238 +1,86 @@
-:root{
-  --bg:#0b0b0b;
-  --panel:#121212;
-  --panel2:#171717;
-  --line:#242424;
-  --text:#f8fafc;
-  --muted:#cbd5e1;
-  --muted2:#94a3b8;
+/* ====== MEJORAS PRO (industrial/comercial) ====== */
 
-  --brand:#f7f000;     /* amarillo marca */
-  --brand2:#ffd600;    /* amarillo secundario */
-  --shadow: 0 16px 40px rgba(0,0,0,.45);
-  --radius: 16px;
-}
-
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{
-  background: radial-gradient(900px 500px at 15% 10%, rgba(247,240,0,.10), transparent 55%),
-              radial-gradient(900px 500px at 85% 20%, rgba(0,170,255,.08), transparent 60%),
-              var(--bg);
-  color:var(--text);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-  line-height:1.5;
-}
-
-a{color:inherit;text-decoration:none}
-.container{
-  width:min(1100px, 92%);
-  margin:0 auto;
-}
-
-.nav{
-  position:sticky; top:0; z-index:20;
-  backdrop-filter: blur(10px);
-  background: rgba(11,11,11,.72);
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-.nav-inner{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:14px 0;
-  gap:16px;
-}
-.brand{
-  display:flex; align-items:center; gap:12px;
-  font-weight:800; letter-spacing:.3px;
-}
-.brand img{
-  height:44px; width:auto;
-  filter: drop-shadow(0 8px 18px rgba(0,0,0,.35));
-}
-.badge{
-  font-size:12px;
-  color:#0b0b0b;
-  background:var(--brand);
-  padding:4px 8px;
-  border-radius:999px;
-  font-weight:800;
-}
-.nav-links{
-  display:flex; gap:18px; align-items:center;
-  color:var(--muted);
-  font-weight:600;
-}
-.nav-links a{opacity:.92}
-.nav-links a:hover{color:var(--text)}
-
-.btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  gap:10px;
-  padding:12px 16px;
-  border-radius:12px;
-  font-weight:800;
-  border:1px solid rgba(255,255,255,.10);
-  transition: transform .12s ease, background .12s ease, border-color .12s ease;
-  cursor:pointer;
-  user-select:none;
-}
-.btn:hover{transform: translateY(-1px)}
-.btn-primary{
-  background: var(--brand);
-  color:#0b0b0b;
-  border-color: rgba(247,240,0,.35);
-}
-.btn-primary:hover{background: var(--brand2)}
-.btn-ghost{
-  background: rgba(255,255,255,.02);
-  color:var(--text);
-}
-.btn-ghost:hover{border-color: rgba(247,240,0,.35)}
-
-.hero{
-  padding:54px 0 26px;
-}
-.hero-grid{
-  display:grid;
-  grid-template-columns: 1.15fr .85fr;
-  gap:22px;
-  align-items:stretch;
-}
-.hero-card{
-  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-  border:1px solid rgba(255,255,255,.06);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding:32px;
-  position:relative;
-  overflow:hidden;
-}
-.hero-card:before{
-  content:"";
-  position:absolute; inset:-2px;
-  background: radial-gradient(600px 220px at 30% 0%, rgba(247,240,0,.12), transparent 60%),
-              radial-gradient(520px 220px at 80% 20%, rgba(0,170,255,.10), transparent 60%);
-  pointer-events:none;
-}
-.hero-card > *{position:relative}
-
-.kicker{
-  display:flex; gap:10px; align-items:center;
-  color:var(--muted);
-  font-weight:700;
-}
-.kicker .dot{
-  width:10px;height:10px;border-radius:50%;
-  background:var(--brand);
-  box-shadow: 0 0 0 6px rgba(247,240,0,.12);
-}
-h1{
-  margin:14px 0 10px;
-  font-size: clamp(30px, 3.4vw, 44px);
-  line-height:1.1;
-  letter-spacing:.3px;
-}
-h1 span{color:var(--brand)}
-.lead{
-  color:var(--muted);
-  font-size: 16px;
-  max-width: 60ch;
-}
-
-.hero-actions{
-  display:flex; gap:12px; flex-wrap:wrap;
-  margin-top:18px;
-}
-
-.side-card{
-  background: rgba(18,18,18,.8);
-  border:1px solid rgba(255,255,255,.06);
-  border-radius: var(--radius);
-  padding:22px;
-  box-shadow: var(--shadow);
-}
-.side-title{
-  font-weight:900;
-  letter-spacing:.25px;
-  margin:0 0 10px;
-}
-.list{
-  margin:0; padding:0;
-  list-style:none;
-  display:grid;
-  gap:10px;
-  color: var(--muted);
-  font-weight:650;
-}
-.list li{
-  display:flex; gap:10px; align-items:flex-start;
-}
-.icon{
-  width:18px; height:18px; margin-top:2px;
-  border-radius:6px;
-  background: rgba(247,240,0,.18);
-  border:1px solid rgba(247,240,0,.28);
-  flex:0 0 auto;
-}
-.small{
-  color: var(--muted2);
-  font-size: 13px;
-  margin-top: 12px;
-}
-
+/* Un poquito más de orden visual entre secciones */
 .section{
-  padding: 26px 0 54px;
+  padding: 28px 0 58px;
 }
+
+/* Títulos de sección más presentes */
 .section h2{
-  margin: 0 0 12px;
-  font-size: 22px;
-  letter-spacing:.2px;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: .25px;
 }
-.grid{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:14px;
+
+/* Enfoque: tarjeta más premium y lista más clara */
+#enfoque .card{
+  background: linear-gradient(180deg, rgba(18,18,18,.78), rgba(18,18,18,.62));
+  box-shadow: var(--shadow);
 }
-.card{
-  background: rgba(18,18,18,.72);
-  border:1px solid rgba(255,255,255,.06);
-  border-radius: 14px;
-  padding: 18px;
+#enfoque .card h3{
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
 }
-.card h3{
-  margin: 0 0 6px;
-  font-size: 16px;
-  letter-spacing:.2px;
-}
-.card p{
-  margin: 0;
-  color: var(--muted);
+#enfoque .card p{
+  margin-bottom: 12px;
   font-size: 14px;
 }
-.card .tag{
-  display:inline-flex;
-  margin-top: 10px;
-  font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  border:1px solid rgba(247,240,0,.22);
-  color: var(--brand);
-  font-weight:800;
+
+/* Lista ordenada del enfoque (sin necesidad de tocar el HTML) */
+#enfoque ol{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+#enfoque ol li{
+  margin: 8px 0;
 }
 
-.footer{
-  border-top:1px solid rgba(255,255,255,.06);
-  padding: 22px 0 34px;
-  color: var(--muted2);
+/* Servicios: soporte real para 4 tarjetas */
+#servicios .grid{
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
 }
-.footer-row{
-  display:flex; justify-content:space-between; align-items:center;
-  gap:14px; flex-wrap:wrap;
+#servicios .card{
+  height: 100%;
 }
-.footer strong{color:var(--text)}
 
-@media (max-width: 920px){
-  .hero-grid{grid-template-columns: 1fr}
-  .grid{grid-template-columns: 1fr}
-  .nav-links{display:none}
+/* Tarjetas: mejora micro-jerarquía */
+.card h3{
+  font-weight: 900;
+}
+.card p{
+  margin-top: 6px;
+  line-height: 1.55;
+}
+
+/* Botones: un pelín más “corporate” */
+.btn{
+  border-radius: 14px;
+}
+.btn-ghost{
+  background: rgba(255,255,255,.03);
+}
+
+/* Hero: mejor respiración en pantallas medianas */
+.hero{
+  padding: 50px 0 22px;
+}
+.lead{
+  font-size: 16px;
+}
+
+/* ====== Responsive refinado ====== */
+@media (max-width: 1100px){
+  #servicios .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px){
+  .hero-card{padding: 24px;}
+  .side-card{padding: 18px;}
+  #servicios .grid{
+    grid-template-columns: 1fr;
+  }
 }
